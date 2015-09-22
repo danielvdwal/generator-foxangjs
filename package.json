@@ -1,0 +1,31 @@
+{
+  "name": "generator-foxangjs",
+  "version": "1.0.0",
+  "description": "Scaffold a Firefox OS Application with AngularJS",
+  "license": "MIT",
+  "main": "app/index.js",
+  "contributors": [{
+    "name": "Nadim Khan"
+  }, {
+    "name": "Robert Scherbarth"
+  }, {
+    "name": "Anatol Tissen"
+  }, {
+    "name": "Daniel van der Wal"
+  }, {
+    "name": "Ramon Victor"
+  }],
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator", 
+    "Firefox OS", 
+    "AngularJS"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.19.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  }
+}

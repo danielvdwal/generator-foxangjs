@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="<%= appName %>">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title><%= appName %></title>
+
+    <!-- build:css styles/vendor.css -->   
+
+    <!-- bower:css -->
+    <!-- endbower -->
+
+    <!-- building_blocks' package.json does not have a main property set, therefore wiredep is not able to inject these files -->
+    <link href="bower_components/building-blocks/style/layout.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/building-blocks/style/headers.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/building-blocks/style/action_menu.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/building-blocks/util.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/building-blocks/style/buttons.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/building-blocks/style/input_areas.css" rel="stylesheet" type="text/css">
+
+    <!-- endbuild -->
+
+    <!-- build:css styles/app.css -->
+
+    <link href="styles/app.css" rel="stylesheet" type="text/css">
+
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <section role="region">
+      <header class="fixed">
+        <h1><%= appName %></h1>
+      	<a href="#actionmenu">
+      	  <span class="icon icon-menu">show action menu</span>
+      	</a>
+      </header>
+
+      <article class="content scrollable header footer">
+      	<div ng-view role="main"></div>
+      </article>
+
+      <footer class="gaia-footer">
+        <p><%= appName %> - Scaffolded by FoxAngJS</p>
+      </footer>
+    </section>
+
+    <!-- build:js scripts/vendor.js -->
+
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/app.js -->
+    
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/actionmenu.js"></script>
+
+    <!-- endbuild -->
+
+  </body>
+</html>
